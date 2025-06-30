@@ -1,0 +1,21 @@
+/dts-v1/;
+/include/ "rk322x.dtsi"
+
+/ {
+    model = "Generic RK3229 TV Box";
+    compatible = "rockchip,rk3229-box", "rockchip,rk3229";
+
+    memory {
+        reg = <0x60000000 0x40000000>;
+    };
+
+    chosen {
+        bootargs = "console=ttyS2,115200n8";
+    };
+
+    aliases {
+        serial0 = &uart2;
+    };
+};
+
+/* Tambahkan node hardware spesifik sesuai kebutuhan board */
