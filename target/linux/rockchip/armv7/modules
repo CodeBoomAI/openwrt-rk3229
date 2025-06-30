@@ -1,0 +1,3 @@
+# List of extra kernel modules for RK322x
+USB_MODULES:=kmod-usb-core kmod-usb-ohci kmod-usb2
+# Tambahkan modul sesuai perangkat keras
